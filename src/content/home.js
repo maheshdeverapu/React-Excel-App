@@ -14,7 +14,6 @@ const Home = () => {
                 console.log(err);
             }
             else {
-                // console.log(resp.rows[0])
                 let x = resp.rows
                 setStateg(x)
                 setState({
@@ -38,6 +37,7 @@ const Home = () => {
     const datas = xy
     return (
         <div>
+            <h2>Add Excel file </h2>
             <input type="file" onChange={(event) => { fileHandler(event) }} style={{ "padding": "10px" }} />
             {!data ? "" :
                 <OutTable data={state.rows} columns={state.cols} tableClassName="ExcelTable2007" tableHeaderRowClass="heading" />
@@ -78,6 +78,7 @@ const Home = () => {
                 <Bar dataKey="value" fill="#8884d8" />
                 <Bar dataKey="uv" fill="#82ca9d" />
             </BarChart>
+                <p>**hover on the chart to get employee Salary</p>
         </div>
 
     )
