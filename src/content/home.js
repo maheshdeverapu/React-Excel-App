@@ -276,6 +276,8 @@ const Home = () => {
 <div className="world_map">
     <h2>WorldMap Chart</h2>
 <Map mapDatas={mapDatas}/>
+<p><span className="green">green</span> - low buying customers</p>
+<p><span className="red">red</span> - high buying customers</p>
 </div>
 :""}
 {inputData?
